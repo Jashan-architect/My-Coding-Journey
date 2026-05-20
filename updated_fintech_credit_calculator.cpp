@@ -23,6 +23,8 @@ int main(){
 
         cout<<"Not eligible!!!"<<endl;
 
+        return 0;
+
     } else if(cibil_score > 749 && monthly_income >=150000){
 
         cout<<"congurates ! , eligible for Elite card"<<endl;
