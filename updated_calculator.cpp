@@ -57,7 +57,7 @@ int main(){
 
 
 
-        }if(choice == "area"){
+        }else if(choice == "area"){
             cout<<"konsi figure ka area nikalna h ?"<<endl;
             cin>>choice;
 
@@ -100,7 +100,7 @@ int main(){
 
             }
     
-    }if(choice =="perimeter"){
+    }else if(choice =="perimeter"){
    
       cout<<"select figure rectangle , square ,triangle , circle"<<endl;
       cin>>choice;
