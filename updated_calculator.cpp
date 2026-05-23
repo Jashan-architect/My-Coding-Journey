@@ -37,7 +37,7 @@ int main(){
             float division;
              cout<<"enter the numbers"<<endl;
              cin>>a>>b;
-            if( b = 0){
+            if( b == 0){
                 cout<<"please enter valid input"<<endl;
                 return 0;
             }
