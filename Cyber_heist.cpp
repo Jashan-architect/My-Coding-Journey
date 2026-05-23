@@ -18,7 +18,7 @@ int main(){
      cout<<"Stats - \nIntellect = 50 \nStealth = 90 \nTools = 40 "<<endl;
 
      cout<<"Choice 3. CYBER-KNIGHT"<<endl;
-     cout<<"Stats - \nIntellect = 40 \nStealth = 30 \nTools = 90 "<<endl;
+     cout<<"Stats - \nIntellect = 70 \nStealth = 30 \nTools = 90 "<<endl;
       
      cout<<"Enter your Choice 1 or 2 or 3"<<endl;
      cin>>choice;
@@ -47,7 +47,7 @@ int main(){
         cout<<"Your Stats - \nIntellect = 40 \nStealth = 30 \nTools = 90 "<<endl;
         cout<<"Best of  luck!"<<endl;
         Intellect = 40;
-        Stealth = 30;
+        Stealth = 70;
         Tools = 90;
 
     }else{
