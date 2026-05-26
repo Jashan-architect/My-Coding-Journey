@@ -143,6 +143,7 @@ int main(){
 
       }else if( choice == "triangle"){
 
+    if(a+b>c && b+c>a && a+c>b){
      float a; 
      float b;
      float c;
@@ -153,6 +154,8 @@ int main(){
 
      cout<<pritriangle<<endl;
      return 0;
+    }else{
+        cout<<"it isn't a triangle"<<endl;
       }
 
     }else{
