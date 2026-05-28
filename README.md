@@ -3,23 +3,15 @@
 Welcome! This repository serves as a centralized vault for my daily coding progress, structured problem-solving, and logic-driven C++ applications. Every program here focus on handling extreme edge cases, data validation, and modular structure.
 
 ---
+# 🚀 GSSoC 2026 Journey
+**Selected Contributor out of 35,000+ applicants!** 🌟
 
-## 🛠️ Key Technical Projects & Feature Suite
+* **Role:** Contributor / Mentee  
+* **Track:** Open Source Track  
+* **Timeline:** 15 May to 14 August 2026  
+* **Objective:** Actively contributing to real-world open-source projects, optimizing C++ structures, and collaborating with global developers.
 
-<!-- GSSoC 2026 Achievement Badge -->
-<p align="center">
-  <img src="https://shields.io" alt="GSSoC 2026">
-  <img src="https://shields.io" alt="Open Source Track">
-</p>
 
----
-
-## 🚀 GSSoC 2026 Journey
-Proud to announce that out of **35,000+ applicants**, this repository and my core logic skills have successfully made it into **GirlScript Summer of Code (GSSoC) 2026** under the **Open Source Track**! 🌟
-
-- **Role:** Contributor / Mentee
-- **Timeline:** 15 May to 14 August 2026
-- **Objective:** Actively contributing to real-world open-source projects, optimizing C++ structures, and collaborating with global developers.
 
 ---
 
