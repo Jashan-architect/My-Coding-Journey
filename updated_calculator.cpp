@@ -4,8 +4,8 @@ using namespace std;
 int main(){
 
     string choice;
-    cout<<"kya karna chate h basic_calculation , area ,perimeter"<<endl;
-    cin>>choice;
+    cout<<"kya karna chate h basic_calculation ,area, perimeter, volume, total surface area, curved surface area"<<endl;
+    getline(cin, choice); // use of getline() for multi-word strings.
 
     
     if(choice == "basic_calculation")
@@ -168,5 +168,116 @@ int main(){
             cout<<"invalid input"<<endl;
         }
         return 0;
+    }
+    else if(choice == "volume")
+    {
+        cout << "select figure cube, cuboid, sphere, cylinder" << endl;
+        cin >> choice;
+        if (choice == "cube")
+        {
+            cout << "enter edge length" << endl;
+            double s;
+            cin >> s;
+            if (s <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << s * s * s << endl;
+        }
+        if (choice == "cuboid")
+        {
+            cout << "enter length, width and height" << endl;
+            double l, w, h;
+            cin >> l >> w >> h;
+            if (l <= 0 || w <= 0 || h <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << l * w * h << endl;
+        }
+        if (choice == "sphere")
+        {
+            cout << "enter radius" << endl;
+            double r;
+            cin >> r;
+            if (r <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << (4 / 3) * 3.14 * r * r * r << endl;
+        }
+        if (choice == "cylinder")
+        {
+            cout << "enter radius and height" << endl;
+            double r, h;
+            cin >> r >> h;
+            if (r <= 0 || h <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << 3.14 * r * r * h;
+        }
+    }
+    else if(choice == "total surface area")
+    {
+        cout << "select figure cube, cuboid, sphere, cylinder" << endl;
+        cin >> choice;
+        if (choice == "cube")
+        {
+            cout << "enter edge length" << endl;
+            double s;
+            cin >> s;
+            if (s <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << s * s * 6 << endl;
+        }
+        if (choice == "cuboid")
+        {
+            cout << "enter length, width and height" << endl;
+            double l, w, h;
+            cin >> l >> w >> h;
+            if (l <= 0 || w <= 0 || h <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout <<( l * w + w * h + l * h ) * 2 << endl;
+        }
+        if (choice == "sphere")
+        {
+            cout << "enter radius" << endl;
+            double r;
+            cin >> r;
+            if (r <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << 4 * 3.14 * r * r << endl;
+        }
+        if (choice == "cylinder")
+        {
+            cout << "enter radius and height" << endl;
+            double r, h;
+            cin >> r >> h;
+            if (r <= 0 || h <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << 2 * 3.14 * r * ( r + h );
+        }
+    }
+    else if(choice == "curved surface area")
+    {
+        cout << "select figure cube, cuboid, sphere, cylinder" << endl;
+        cin >> choice;
+        if (choice == "cube")
+        {
+            cout << "enter edge length" << endl;
+            double s;
+            cin >> s;
+            if (s <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << s * s * 4 << endl;
+        }
+        if (choice == "cuboid")
+        {
+            cout << "enter length, width and height" << endl;
+            double l, w, h;
+            cin >> l >> w >> h;
+            if (l <= 0 || w <= 0 || h <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout <<( l + w ) * h * 2 << endl;
+        }
+        if (choice == "sphere")
+        {
+            cout << "enter radius" << endl;
+            double r;
+            cin >> r;
+            if (r <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << 4 * 3.14 * r * r << endl;
+        }
+        if (choice == "cylinder")
+        {
+            cout << "enter radius and height" << endl;
+            double r, h;
+            cin >> r >> h;
+            if (r <= 0 || h <= 0) cout << "Error: Dimensions must be greater than zero!";
+            cout << 2 * 3.14 * r * h;
+        }
     }
 } // missing closing "}".
