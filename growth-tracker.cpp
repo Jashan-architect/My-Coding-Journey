@@ -12,14 +12,14 @@ int main(){
 
     double weight , height;
     
-    cout<<"enter the number of person"<<endl;
+    cout<<"👥 Enter the number of people to track: "<<endl;
     int n;
     int i = 1;
     cin>>n;
 
     if(n>0){
 
-        cout<<" enter yor weight in KGs and height in inches"<<endl;
+        cout<<"⚖️ Enter your weight in KGs and height in inches: "<<endl;
     
     while(i<=n){
 
@@ -29,22 +29,22 @@ int main(){
 
         if(my_BMI < 18.5){
 
-         cout<<"you are under weight \n eat healthy"<<endl;
+         cout<<"⚠️ You are under weight \n 🍎 Eat healthy!"<<endl;
          
 
         }else if(my_BMI >= 18.5 && my_BMI <= 24.9){
 
-            cout<<"you are fit \n keep it up!"<<endl;
+            cout<<"✅ You are fit \n 💪 Keep it up!"<<endl;
             
 
         }else if(my_BMI > 24.9 && my_BMI <= 25){
 
-          cout<<"you are little healthy \n improve your diet"<<endl;
+          cout<<"⚠️ You are a little overweight \n 🥗 Improve your diet."<<endl;
           
 
         }else if(my_BMI > 25){
 
-            cout<<"you are too healthy!! \nreduce weight"<<endl;
+            cout<<"🛑 You are in the obese category \n 🏃 Reduce weight for better health!"<<endl;
             
         }
 
@@ -54,7 +54,7 @@ int main(){
    
     }else{
 
-        cout<<"invalid input!!"<<endl;
+        cout<<"❌ Invalid input! Please try again."<<endl;
         
     }
 }

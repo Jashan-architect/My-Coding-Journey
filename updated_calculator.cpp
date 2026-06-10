@@ -1,18 +1,18 @@
-#include<iostream>
+#include<bits/stdc++.h>  // It can include all the header files
 using namespace std;
-
 int main(){
 
     string choice;
-    cout<<"kya karna chate h basic_calculation , area ,perimeter"<<endl;
+    cout<<"kya karna chate h basiccalculation , area ,perimeter"<<endl; 
     cin>>choice;
 
-    
-    if(choice == "basic_calculation"){
+    for(int i=0; i<choice.length(); i++){
+        choice[i] = tolower((unsigned char)choice[i]);
+    }
+    if(choice == "basiccalculation"){
 
         cout<<"kya karna chate h aap addition,subtraction,division,multipication or area"<<endl;
-        cin>>choice;
-
+        cin>>choice; 
         if(choice == "addition"){
             float a;
             float b;
@@ -21,8 +21,8 @@ int main(){
             cin>>a>>b;
             addition = a+b;
             cout<<addition<<endl;
-            return 0;
-        }else if(choice == "subtraction"){
+        }
+        else if(choice == "subtraction"){
             float a;
             float b;
             float subtraction;
@@ -30,7 +30,6 @@ int main(){
              cin>>a>>b;
              subtraction = a-b;
              cout<<subtraction<<endl;
-             return 0;
         }else if(choice == "division"){
             float a;
             float b;
@@ -39,33 +38,28 @@ int main(){
              cin>>a>>b;
             if( b == 0){
                 cout<<"please enter valid input"<<endl;
-                return 0;
             }
             else{ division = a/b;
              cout<<division<<endl;
-             return 0;
            }
-        }else if(choice == "multipication"){
+        }else if(choice == "multiplication"){ //typo in multiplication
 
             float a;
             float b;
-            float multipication;
+            float multiplication;
              cout<<"enter the numbers"<<endl;
              cin>>a>>b;
-            multipication = a*b;
-            cout<<multipication<<endl;
-            return 0;
-            
+            multiplication = a*b;
+            cout<<multiplication<<endl;
         }
-        
-
-
+        else{
+            cout<<"invalid input"<<endl;
+        }
 
 
         }else if(choice == "area"){
             cout<<"konsi figure ka area nikalna h ?"<<endl;
             cin>>choice;
-
             if(choice == "square"){
 
                 cout<<"enter the side length"<<endl;
@@ -74,7 +68,6 @@ int main(){
                 float arsquare;
                 arsquare = side_length*side_length;
                 cout<<arsquare<<endl;
-                return 0;
             }else if(choice == "rectangle"){
                 cout<<"enter the length and breadth"<<endl;
                 float length;
@@ -83,7 +76,6 @@ int main(){
                 cin>>length>>breadth;
                 arrectangle = length*breadth;
                 cout<<arrectangle<<endl;
-                return 0;
             }else if(choice == "circle"){
                 cout<<"enter the radius"<<endl;
                 float radius;
@@ -92,7 +84,6 @@ int main(){
                 float arcircle;
                 arcircle = pi*radius*radius;
                 cout<<arcircle<<endl;
-                return 0;
             }else if(choice == "triangle"){
                 cout<<"enter base and height"<<endl;
                 float base;
@@ -101,8 +92,10 @@ int main(){
                 cin>>base>>height;
                 artriangle = 0.5*base*height;
                 cout<<artriangle<<endl;
-                return 0 ;
 
+            }
+            else{
+                cout<<"invalid input"<<endl;
             }
     
     }else if(choice =="perimeter"){
@@ -118,7 +111,6 @@ int main(){
         float prisquare;
         prisquare = 4*side_length;
         cout<<prisquare<<endl;
-        return 0;
 
       }else if(choice == "rectangle"){
       
@@ -129,7 +121,6 @@ int main(){
         cin>>length>>breadth;
         prirectangle = 2*(length + breadth);
         cout<<prirectangle<<endl;
-        return 0;
       }else if(choice == "circle"){
 
         float radius;
@@ -139,28 +130,30 @@ int main(){
         float pricircle;
         pricircle = pi*2*radius;
         cout<<pricircle<<endl;
-        return 0;
 
       }else if( choice == "triangle"){
-
+    
+    float a; 
+    float b;
+    float c;
+    cout<<"enter the length of all 3 sides"<<endl;
+    cin>>a>>b>>c;
     if(a+b>c && b+c>a && a+c>b){
-     float a; 
-     float b;
-     float c;
      float pritriangle;
-     cout<<"enter the length of all 3 sides"<<endl;
-     cin>>a>>b>>c;
      pritriangle = a + b + c;
 
      cout<<pritriangle<<endl;
-     return 0;
-    }else{
-        cout<<"it isn't a triangle"<<endl;
-      }
-
-    }else{
-
+    }
+    else{
         cout<<"invalid input"<<endl;
     }
+    }
+    }
+    else{
+        cout<<"invalid input"<<endl;
+    }
+
+    cout << "Thank you for using calculator!" << endl;
     return 0;
 }
+
