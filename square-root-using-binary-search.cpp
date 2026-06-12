@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-   int n;
+ long long  int n;
    cout<<"enter the number"<<endl;
    cin>>n;
 
@@ -12,8 +12,8 @@ int main(){
     cout<<"Invalid Input"<<endl;
 
    }else{
-        int start = 0, end = n , ans =-1;
-        int mid = start + (end - start)/2;
+       long long  int start = 0, end = n , ans =-1;
+       long long int mid = start + (end - start)/2;
 
         
         while(start <= end){
