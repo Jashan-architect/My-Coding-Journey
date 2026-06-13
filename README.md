@@ -93,6 +93,23 @@ Handles unique operative classes with specific statistical attributes and progre
 
 - ## 📊 Data Structures Roadmap & Array Integration (In Progress)
 Currently stepping into linear data structures to upgrade the existing procedural engines.
+### 📈 Algorithmic Problem Solving (Binary Search & Arrays)
+
+| Problem Name | Core Approach (1-2 Points) | Complexity | Status |
+| :--- | :--- | :--- | :---: |
+| **Array Reversal** | • Two-pointer technique meeting at the center.<br>• In-place element swapping. | $O(N)$ time<br>$O(1)$ space | 🟢 Done |
+| **Two Sum** | • Linear scanning or element checking target differences.<br>• Array index tracking. | $O(N)$ time<br>$O(1)$ space | 🟢 Done |
+| **Mountain Peak** | • Binary search on bitonic (increasing-decreasing) data.<br>• Mid-element comparison with neighbors to find peak. | $O(\log N)$ time<br>$O(1)$ space | 🟢 Done |
+| **Rotated Sorted Search** | • Modified binary search tracking array inflection points.<br>• Identifying which half is strictly monotonic. | $O(\log N)$ time<br>$O(1)$ space | 🟢 Done |
+| **Square Root (BS)** | • Binary search over integer search space $[1, N]$.<br>• Mid-point squaring to match closest target. | $O(\log N)$ time<br>$O(1)$ space | 🟢 Done |
+| **Book Allocation** | • Binary search over answer range ($\max$ element to total sum).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\sum \text{pages}))$<br>$O(1)$ space | 🟡 In Progress |
+
+---
+
+### 🧠 Critical Boundary Checks Covered
+* **Rotated Arrays:** Always locate the sorted subarray boundary before reducing the search space.
+* **Book Allocation:** Set $low = \max(\text{array})$ to handle the edge case where a single heavy book exceeds the mid-limit.
+
 
 ### 🎒 Core Array Concepts Learned:
 - **Fixed Memory Allocation:** Understanding contiguous memory blocks in C++.
