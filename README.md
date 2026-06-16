@@ -103,6 +103,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Rotated Sorted Search** | • Modified binary search tracking array inflection points.<br>• Identifying which half is strictly monotonic. | $O(\log N)$ time<br>$O(1)$ space |  Done |
 | **Square Root (BS)** | • Binary search over integer search space $[1, N]$.<br>• Mid-point squaring to match closest target. | $O(\log N)$ time<br>$O(1)$ space |  Done |
 | **Book Allocation** | • Binary search over answer range ($\max$ element to total sum).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\sum \text{pages}))$<br>$O(1)$ space | Done |
+| Painter Partition | • Binary search over answer range (max element to total sum). <br> • Greedy continuous allocation check for each mid-value. | O(N log(sum)) time <br> O(1) space | Done |
 
 ---
 
