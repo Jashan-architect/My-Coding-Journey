@@ -104,8 +104,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Square Root (BS)** | • Binary search over integer search space $[1, N]$.<br>• Mid-point squaring to match closest target. | $O(\log N)$ time<br>$O(1)$ space |  Done |
 | **Book Allocation** | • Binary search over answer range ($\max$ element to total sum).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\sum \text{pages}))$<br>$O(1)$ space | Done |
 | Painter Partition | • Binary search over answer range (max element to total sum). <br> • Greedy continuous allocation check for each mid-value. | O(N log(sum)) time <br> O(1) space | Done |
-| **Aggressive Cows** | <ul><li>Binary search over answer range `[0, max_stall - min_stall]`.</li><li>Greedy placement of cows to check if minimum distance `mid` is possible.</li></ul> | $O(N \log(\text{max\_stall} - \text{min\_stall}))$ time<br>$O(1)$ space | Done |
-
+| **Aggressive Cows** | <ul><li>Binary search over answer range `[0, max_stall - min_stall]`.</li><li>Greedy placement of cows to check if minimum distance `mid` is possible.</li></ul> | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
 ---
 
 ### 🧠 Critical Boundary Checks Covered
