@@ -106,6 +106,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | Painter Partition | • Binary search over answer range (max element to total sum). <br> • Greedy continuous allocation check for each mid-value. | O(N log(sum)) time <br> O(1) space | Done |
 | **Aggressive Cows** | <ul><li>Binary search over answer range `[0, max_stall - min_stall]`.</li><li>Greedy placement of cows to check if minimum distance `mid` is possible.</li></ul> | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
 | Container With Most Water | • Two-pointer technique meeting at the center.<br>• Area calculation based on width and minimum height.<br>• Moving the smaller pointer inward to maximize potential area. | O(N) time<br>O(1) space | Done |
+| 3Sum Closest | • Sort array and fix the first element using a loop up to `size - 2`. <br> • Use a two-pointer approach (`left` & `right`) with absolute distance `abs()` to track the nearest sum. | $O(N^2)$ time <br> $O(1)$ space | Done |
 ---
 
 ### 🧠 Critical Boundary Checks Covered
