@@ -109,6 +109,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | 3Sum Closest | • Sort array and fix the first element using a loop up to `size - 2`. <br> • Use a two-pointer approach (`left` & `right`) with absolute distance `abs()` to track the nearest sum. | $O(N^2)$ time <br> $O(1)$ space | Done |
 | **Pair Sum** | • **Sort and Setup:** Sort the given vector in ascending order to handle internal sorting constraints automatically.<br>• **Two-Pointer Traversal:** Initialize two pointers `s` at `0` and `e` at `n - 1`. Loop while `s < e` to find matching pairs while handling duplicate element frequencies. | $O(N \log N)$ time<br>$O(1)$ space | Done |
 | First Missing Positive | • **In-Place Cyclic Sort:** Iterate and swap positive elements `x` (where `1 <= x <= n`) to their correct index `x - 1`. Non-positive numbers and values `> n` are ignored.<br>• **Linear Scan Verification:** Traverse the rearranged array; the first index `i` where `testcase[i] != i + 1` reveals the missing number `i + 1`. If all match, return `n + 1`. | **O(N)** time<br>**O(1)** space | Done |
+| Remove Duplicates | • Two-pointer technique with slow pointer `i` and fast explorer `j`. <br> • In-place element overwriting on mismatch (`nums[j] != nums[i]`). | $O(N)$ time <br> $O(1)$ space | Done |
 ---
 
 ### 🧠 Critical Boundary Checks Covered
