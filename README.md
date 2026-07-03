@@ -112,6 +112,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | Remove Duplicates | • Two-pointer technique with slow pointer `i` and fast explorer `j`. <br> • In-place element overwriting on mismatch (`nums[j] != nums[i]`). | $O(N)$ time <br> $O(1)$ space | Done |
 | Second Largest | • Sort the array in ascending order to shift the largest element to the end.<br>• Scan backward from `n - 2` and return the first element strictly smaller than the largest. | $O(N \log N)$ time<br>$O(1)$ space | Done |
 | 3Sum | • **Sort and Fix:** Sort the array in ascending order. Iterate through the array, fixing the first element `nums[i]` one by one, while skipping any consecutive identical elements to avoid duplicate triplets.<br>• **Two-Pointer Search:** Place a left pointer `j` right after `i` and a right pointer `k` at the end of the array. Move them inward: if `nums[i] + nums[j] + nums[k] == 0`, store the triplet and shift both pointers while skipping duplicates. Otherwise, adjust `j++` or `k--` based on the sum. | $O(N^2)$ time<br>$O(1)$ space | Done |
+| Median of Two Sorted Arrays | • Binary search on partitions of the smaller array to find a balanced split.<br>• Edge handling via `INT_MIN`/`INT_MAX` to align left and right half elements. | $O(\log(\min(m, n)))$ time<br>$O(1)$ space | Done |
 ---
 
 ### 🧠 Critical Boundary Checks Covered
