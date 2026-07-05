@@ -124,9 +124,8 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Square Root (BS)** | • Binary search over integer search space $[1, N]$.<br>• Mid-point squaring to match closest target. | $O(\log N)$ time<br>$O(1)$ space | Done |
 | **Book Allocation** | • Binary search over answer range (`max element` to `total sum`).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\sum \text{pages}))$ time<br>$O(1)$ space | Done |
 | **Painter Partition** | • Binary search over answer range (`max element` to `total sum`).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\text{sum}))$ time<br>$O(1)$ space | Done |
-| **Aggressive Cows** | • Binary search over answer range $[0, \text{max\_stall} - \text{min\_stall}]$.<br>• Greedy placement of cows to check if minimum distance `mid` is possible. | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
+| **Aggressive Cows** | • Binary search over answer range `[0, max_stall - min_stall]`.<br>• Greedy placement of cows to check if minimum distance `mid` is possible. | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
 | **Median of Two Sorted Arrays** | • Binary search on partitions of the smaller array to find a balanced split.<br>• Edge handling via `INT_MIN / INT_MAX` to align left and right half elements. | $O(\log(\min(m, n)))$ time<br>$O(1)$ space | Done |
-
 ---
 
 ### 🧠 Critical Boundary Checks Covered
