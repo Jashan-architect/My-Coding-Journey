@@ -95,25 +95,38 @@ Handles unique operative classes with specific statistical attributes and progre
 Currently stepping into linear data structures to upgrade the existing procedural engines.
 ### 📈 Algorithmic Problem Solving (Binary Search & Arrays)
 
+## 🗂️ Arrays & Basic Operations
+
 | Problem Name | Core Approach (1-2 Points) | Complexity | Status |
-| :--- | :--- | :--- | :---: |
-| **Array Reversal** | • Two-pointer technique meeting at the center.<br>• In-place element swapping. | $O(N)$ time<br>$O(1)$ space |  Done |
-| **Two Sum** | • Linear scanning or element checking target differences.<br>• Array index tracking. | $O(N)$ time<br>$O(1)$ space |  Done |
-| **Mountain Peak** | • Binary search on bitonic (increasing-decreasing) data.<br>• Mid-element comparison with neighbors to find peak. | $O(\log N)$ time<br>$O(1)$ space |  Done |
-| **Rotated Sorted Search** | • Modified binary search tracking array inflection points.<br>• Identifying which half is strictly monotonic. | $O(\log N)$ time<br>$O(1)$ space |  Done |
-| **Square Root (BS)** | • Binary search over integer search space $[1, N]$.<br>• Mid-point squaring to match closest target. | $O(\log N)$ time<br>$O(1)$ space |  Done |
-| **Book Allocation** | • Binary search over answer range ($\max$ element to total sum).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\sum \text{pages}))$<br>$O(1)$ space | Done |
-| Painter Partition | • Binary search over answer range (max element to total sum). <br> • Greedy continuous allocation check for each mid-value. | O(N log(sum)) time <br> O(1) space | Done |
-| **Aggressive Cows** | <ul><li>Binary search over answer range `[0, max_stall - min_stall]`.</li><li>Greedy placement of cows to check if minimum distance `mid` is possible.</li></ul> | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
-| Container With Most Water | • Two-pointer technique meeting at the center.<br>• Area calculation based on width and minimum height.<br>• Moving the smaller pointer inward to maximize potential area. | O(N) time<br>O(1) space | Done |
-| 3Sum Closest | • Sort array and fix the first element using a loop up to `size - 2`. <br> • Use a two-pointer approach (`left` & `right`) with absolute distance `abs()` to track the nearest sum. | $O(N^2)$ time <br> $O(1)$ space | Done |
-| **Pair Sum** | • **Sort and Setup:** Sort the given vector in ascending order to handle internal sorting constraints automatically.<br>• **Two-Pointer Traversal:** Initialize two pointers `s` at `0` and `e` at `n - 1`. Loop while `s < e` to find matching pairs while handling duplicate element frequencies. | $O(N \log N)$ time<br>$O(1)$ space | Done |
-| First Missing Positive | • **In-Place Cyclic Sort:** Iterate and swap positive elements `x` (where `1 <= x <= n`) to their correct index `x - 1`. Non-positive numbers and values `> n` are ignored.<br>• **Linear Scan Verification:** Traverse the rearranged array; the first index `i` where `testcase[i] != i + 1` reveals the missing number `i + 1`. If all match, return `n + 1`. | **O(N)** time<br>**O(1)** space | Done |
-| Remove Duplicates | • Two-pointer technique with slow pointer `i` and fast explorer `j`. <br> • In-place element overwriting on mismatch (`nums[j] != nums[i]`). | $O(N)$ time <br> $O(1)$ space | Done |
-| Second Largest | • Sort the array in ascending order to shift the largest element to the end.<br>• Scan backward from `n - 2` and return the first element strictly smaller than the largest. | $O(N \log N)$ time<br>$O(1)$ space | Done |
-| 3Sum | • **Sort and Fix:** Sort the array in ascending order. Iterate through the array, fixing the first element `nums[i]` one by one, while skipping any consecutive identical elements to avoid duplicate triplets.<br>• **Two-Pointer Search:** Place a left pointer `j` right after `i` and a right pointer `k` at the end of the array. Move them inward: if `nums[i] + nums[j] + nums[k] == 0`, store the triplet and shift both pointers while skipping duplicates. Otherwise, adjust `j++` or `k--` based on the sum. | $O(N^2)$ time<br>$O(1)$ space | Done |
-| Median of Two Sorted Arrays | • Binary search on partitions of the smaller array to find a balanced split.<br>• Edge handling via `INT_MIN`/`INT_MAX` to align left and right half elements. | $O(\log(\min(m, n)))$ time<br>$O(1)$ space | Done |
+| :--- | :--- | :--- | :--- |
+| **Array Reversal** | • Two-pointer technique meeting at the center.<br>• In-place element swapping. | $O(N)$ time<br>$O(1)$ space | Done |
+| **Two Sum** | • Linear scanning or element checking target differences.<br>• Array index tracking. | $O(N)$ time<br>$O(1)$ space | Done |
+| **First Missing Positive** | • In-Place Cyclic Sort: Iterate and swap positive elements `x` (where $1 \le x \le n$) to their correct index `x - 1`. Non-positive numbers and values $> n$ are ignored.<br>• Linear Scan Verification: Traverse the rearranged array; the first index `i` where `testcase[i] != i + 1` reveals the missing number `i + 1`. If all match, return `n + 1`. | $O(N)$ time<br>$O(1)$ space | Done |
+| **Second Largest** | • Sort the array in ascending order to shift the largest element to the end.<br>• Scan backward from `n - 2` and return the first element strictly smaller than the largest. | $O(N \log N)$ time<br>$O(1)$ space | Done |
+
+## ⛓️ Two Pointers Technique
+
+| Problem Name | Core Approach (1-2 Points) | Complexity | Status |
+| :--- | :--- | :--- | :--- |
+| **Container With Most Water** | • Two-pointer technique meeting at the center.<br>• Area calculation based on width and minimum height.<br>• Moving the smaller pointer inward to maximize potential area. | $O(N)$ time<br>$O(1)$ space | Done |
+| **3Sum Closest** | • Sort array and fix the first element using a loop up to `size - 2`.<br>• Use a two-pointer approach (`left` & `right`) with absolute distance `abs()` to track the nearest sum. | $O(N^2)$ time<br>$O(1)$ space | Done |
+| **Pair Sum** | • Sort and Setup: Sort the given vector in ascending order to handle internal sorting constraints automatically.<br>• Two-Pointer Traversal: Initialize two pointers `s` at 0 and `e` at `n - 1`. Loop while `s < e` to find matching pairs while handling duplicate element frequencies. | $O(N \log N)$ time<br>$O(1)$ space | Done |
+| **Remove Duplicates** | • Two-pointer technique with slow pointer `i` and fast explorer `j`.<br>• In-place element overwriting on mismatch (`nums[j] != nums[i]`). | $O(N)$ time<br>$O(1)$ space | Done |
+| **3Sum** | • Sort and Fix: Sort the array in ascending order. Iterate through the array, fixing the first element `nums[i]` one by one, while skipping any consecutive identical elements to avoid duplicate triplets.<br>• Two-Pointer Search: Place a left pointer `j` right after `i` and a right pointer `k` at the end of the array. Move them inward: if `nums[i] + nums[j] + nums[k] == 0`, store the triplet and shift both pointers while skipping duplicates. Otherwise, adjust `j++` or `k--` based on the sum. | $O(N^2)$ time<br>$O(1)$ space | Done |
 | **Merge Sorted Array** | • Three-pointer approach tracking indices from the back of arrays.<br>• Backward comparison to fill elements into trailing zeros without extra space. | $O(m + n)$ time<br>$O(1)$ space | Done |
+
+## 🔍 Binary Search & Advanced Search
+
+| Problem Name | Core Approach (1-2 Points) | Complexity | Status |
+| :--- | :--- | :--- | :--- |
+| **Mountain Peak** | • Binary search on bitonic (increasing-decreasing) data.<br>• Mid-element comparison with neighbors to find peak. | $O(\log N)$ time<br>$O(1)$ space | Done |
+| **Rotated Sorted Search** | • Modified binary search tracking array inflection points.<br>• Identifying which half is strictly monotonic. | $O(\log N)$ time<br>$O(1)$ space | Done |
+| **Square Root (BS)** | • Binary search over integer search space $[1, N]$.<br>• Mid-point squaring to match closest target. | $O(\log N)$ time<br>$O(1)$ space | Done |
+| **Book Allocation** | • Binary search over answer range (`max element` to `total sum`).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\sum \text{pages}))$ time<br>$O(1)$ space | Done |
+| **Painter Partition** | • Binary search over answer range (`max element` to `total sum`).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\text{sum}))$ time<br>$O(1)$ space | Done |
+| **Aggressive Cows** | • Binary search over answer range $[0, \text{max\_stall} - \text{min\_stall}]$.<br>• Greedy placement of cows to check if minimum distance `mid` is possible. | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
+| **Median of Two Sorted Arrays** | • Binary search on partitions of the smaller array to find a balanced split.<br>• Edge handling via `INT_MIN / INT_MAX` to align left and right half elements. | $O(\log(\min(m, n)))$ time<br>$O(1)$ space | Done |
+
 ---
 
 ### 🧠 Critical Boundary Checks Covered
