@@ -103,7 +103,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Two Sum** | • Linear scanning or element checking target differences.<br>• Array index tracking. | $O(N)$ time<br>$O(1)$ space | Done |
 | **First Missing Positive** | • In-Place Cyclic Sort: Iterate and swap positive elements `x` (where $1 \le x \le n$) to their correct index `x - 1`. Non-positive numbers and values $> n$ are ignored.<br>• Linear Scan Verification: Traverse the rearranged array; the first index `i` where `testcase[i] != i + 1` reveals the missing number `i + 1`. If all match, return `n + 1`. | $O(N)$ time<br>$O(1)$ space | Done |
 | **Second Largest** | • Sort the array in ascending order to shift the largest element to the end.<br>• Scan backward from `n - 2` and return the first element strictly smaller than the largest. | $O(N \log N)$ time<br>$O(1)$ space | Done |
-| Check if Array Is Sorted and Rotated (LeetCode 1752) | Array / Circular Comparison | Count breakpoints where `nums[i] > nums[(i+1)%n]`. Valid if `count <= 1`. | O(N) time | O(1) space |
+| Check if Array Is Sorted and Rotated | • Count breakpoints where `nums[i] > nums[(i + 1) % n]`. <br> • Valid if total breakpoint count is at most 1. | O(N) time <br> O(1) space | Done |
 
 ## ⛓️ Two Pointers Technique
 
