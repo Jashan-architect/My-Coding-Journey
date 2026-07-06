@@ -104,6 +104,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **First Missing Positive** | • In-Place Cyclic Sort: Iterate and swap positive elements `x` (where $1 \le x \le n$) to their correct index `x - 1`. Non-positive numbers and values $> n$ are ignored.<br>• Linear Scan Verification: Traverse the rearranged array; the first index `i` where `testcase[i] != i + 1` reveals the missing number `i + 1`. If all match, return `n + 1`. | $O(N)$ time<br>$O(1)$ space | Done |
 | **Second Largest** | • Sort the array in ascending order to shift the largest element to the end.<br>• Scan backward from `n - 2` and return the first element strictly smaller than the largest. | $O(N \log N)$ time<br>$O(1)$ space | Done |
 | Check if Array Is Sorted and Rotated | • Count breakpoints where `nums[i] > nums[(i + 1) % n]`. <br> • Valid if total breakpoint count is at most 1. | O(N) time <br> O(1) space | Done |
+| Sum Of Two Arrays | • Process both arrays from right to left using two pointers (`i` and `j`) to compute element-wise sum with `carry`. <br> • Use individual loops to exhaust remaining digits of the longer array and append any leftover carry at the end, then reverse the result. | O(N + M) time <br> O(max(N, M)) space | Done |
 
 ## ⛓️ Two Pointers Technique
 
