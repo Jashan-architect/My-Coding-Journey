@@ -8,7 +8,7 @@ int main(){
     vector<int> nums = {1 , 2 , 3 , 4 , 5 , 6 , 7};
 
     int n = nums.size();
-    int s = 0 , e = nums.size() - 1 ,  k = 5;
+    int s = 0 , e = nums.size() - 1 ,  k = 11;
     k = k % n;
     
     while(s < e){
