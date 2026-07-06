@@ -9,6 +9,7 @@ int main(){
 
     int n = nums.size();
     int s = 0 , e = nums.size() - 1 ,  k = 5;
+    k = k % n;
     
     while(s < e){
 
