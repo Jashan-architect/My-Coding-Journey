@@ -118,6 +118,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Merge Sorted Array** | • Three-pointer approach tracking indices from the back of arrays.<br>• Backward comparison to fill elements into trailing zeros without extra space. | $O(m + n)$ time<br>$O(1)$ space | Done |
 | **Move Zeroes** | • **Two-Pointer Strategy:** Process the array in a single pass using one pointer to track the next non-zero slot and another to scan ahead.<br>• **Partitioning via Swapping:** Dynamically swap non-zero elements into the tracker slot to push all zeros to the end while preserving relative order. | $O(N)$ time<br>$O(1)$ space | Done |
 | **Rotate Array** | • **Modulo Reduction:** Use `k = k % n` to avoid redundant cycles, as rotating an array of size `n` by `n` times returns it to its original state.<br>• **Three-Step Reversal:** Reverse the entire array, then reverse the first `k` elements, and finally reverse the remaining elements using two pointers (`s` and `e`) to position all elements correctly in-place. | $O(N)$ time<br>$O(1)$ space | Done |
+| Length of Last Word | - **Skip Trailing Spaces:** Start from the very end of the string (last index) and move backwards, skipping all empty spaces by decrementing the pointer until hitting the first actual character.<br>- **Count Last Word:** Once a character is found, count the letters and move backwards until hitting another space or reaching the beginning of the string. | $O(N)$ time<br>$O(1)$ space | Done |
 
 ## 🔍 Binary Search & Advanced Search
 
