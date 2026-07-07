@@ -120,6 +120,8 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Rotate Array** | • **Modulo Reduction:** Use `k = k % n` to avoid redundant cycles, as rotating an array of size `n` by `n` times returns it to its original state.<br>• **Three-Step Reversal:** Reverse the entire array, then reverse the first `k` elements, and finally reverse the remaining elements using two pointers (`s` and `e`) to position all elements correctly in-place. | $O(N)$ time<br>$O(1)$ space | Done |
 | Length of Last Word | &bull; **Skip Trailing Spaces:** Start from the very end of the string (last index) and move backwards, skipping all empty spaces by decrementing the pointer until hitting the first actual character.<br>&bull; **Count Last Word:** Once a character is found, count the letters and move backwards until hitting another space or reaching the beginning of the string. | $O(N)$ time<br>$O(1)$ space | Done |
 | Reverse a String (Char Array) | &bull; **Find Length:** Iterate through the character array using a loop until hitting the null character (`'\0'`) to find the total length ($n$).<br>&bull; **Two-Pointer Swap:** Initialize two pointers at the start (`s=0`) and end (`e=n-1`), then swap characters while moving the pointers inward (`s++`, `e--`) until they meet. | $O(N)$ time<br>$O(1)$ space | Done |
+| Valid Palindrome | &bull; **Skip & Match:** Use two pointers (`i=0`, `j=n-1`) to move inward. Skip non-alphanumeric characters using `isalnum()`.<br>&bull; **Case-Insensitive Check:** Convert valid characters to lowercase using `tolower()`. If `s[i] != s[j]`, return `false` early; else return `true` after the loop completes. | $O(N)$ time<br>$O(1)$ space | Done |
+
 
 ## 🔍 Binary Search & Advanced Search
 
