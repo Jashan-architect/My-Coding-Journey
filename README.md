@@ -105,6 +105,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Second Largest** | • Sort the array in ascending order to shift the largest element to the end.<br>• Scan backward from `n - 2` and return the first element strictly smaller than the largest. | $O(N \log N)$ time<br>$O(1)$ space | Done |
 | Check if Array Is Sorted and Rotated | • Count breakpoints where `nums[i] > nums[(i + 1) % n]`. <br> • Valid if total breakpoint count is at most 1. | O(N) time <br> O(1) space | Done |
 | Sum Of Two Arrays | • Process both arrays from right to left using two pointers (`i` and `j`) to compute element-wise sum with `carry`. <br> • Use individual loops to exhaust remaining digits of the longer array and append any leftover carry at the end, then reverse the result. | O(N + M) time <br> O(max(N, M)) space | Done |
+| Maximum Occurring Character | &bull; **Frequency Mapping:** Create a 26-sized array initialized to 0. Iterate through the string and map each character using `s[i] - 'a'` to increment its respective count.<br>&bull; **Max Scan:** Loop from index 0 to 25 to track the maximum frequency. Scanning sequentially from 'a' to 'z' naturally handles lexicographically smaller ties. | $O(N)$ time<br>$O(1)$ space | Done |
 
 ## ⛓️ Two Pointers Technique
 
