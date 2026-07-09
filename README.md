@@ -50,7 +50,8 @@ An analytical price processing application tailored to optimize system revenue t
 A console-based simulator designed to process multi-stage beverage customization routines.
 * Effectively maps selections between Tea and Coffee, evaluates specialized variants based on user inputs, and computes precise, real-time preparation countdown metrics.
 
-​### 6. ​🛣️  Eco-Toll Tax Calculator
+​<h3> 6. ​🛣️  Eco-Toll Tax Calculator </h3>
+
 ​A smart console application designed to calculate route-based toll fees and environmental taxes using strict if-else logic.
 
 ​✨ Highlights
@@ -106,6 +107,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | Check if Array Is Sorted and Rotated | • Count breakpoints where `nums[i] > nums[(i + 1) % n]`. <br> • Valid if total breakpoint count is at most 1. | O(N) time <br> O(1) space | Done |
 | Sum Of Two Arrays | • Process both arrays from right to left using two pointers (`i` and `j`) to compute element-wise sum with `carry`. <br> • Use individual loops to exhaust remaining digits of the longer array and append any leftover carry at the end, then reverse the result. | O(N + M) time <br> O(max(N, M)) space | Done |
 | Maximum Occurring Character | &bull; **Frequency Mapping:** Create a 26-sized array initialized to 0. Iterate through the string and map each character using `s[i] - 'a'` to increment its respective count.<br>&bull; **Max Scan:** Loop from index 0 to 25 to track the maximum frequency. Scanning sequentially from 'a' to 'z' naturally handles lexicographically smaller ties. | $O(N)$ time<br>$O(1)$ space | Done |
+| **Remove All Occurrences of a Substring** | • **Sub-string Simulation:** Continuously locate the leftmost occurrence of the target substring using `s.find()` and remove it dynamically via `s.erase()`.<br>• **Termination Condition:** Run the lookup inside a `while` loop that terminates immediately when the substring is no longer found or the string becomes empty. | $O(N^2)$ time<br>$O(1)$ space | Done |
 
 ## ⛓️ Two Pointers Technique
 
