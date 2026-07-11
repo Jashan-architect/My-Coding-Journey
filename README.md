@@ -143,6 +143,8 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | **Painter Partition** | • Binary search over answer range (`max element` to `total sum`).<br>• Greedy continuous allocation check for each mid-value. | $O(N \log(\text{sum}))$ time<br>$O(1)$ space | Done |
 | **Aggressive Cows** | • Binary search over answer range `[0, max_stall - min_stall]`.<br>• Greedy placement of cows to check if minimum distance `mid` is possible. | $O(N \log(\text{maxStall} - \text{minStall}))$ time<br>$O(1)$ space | Done |
 | **Median of Two Sorted Arrays** | • Binary search on partitions of the smaller array to find a balanced split.<br>• Edge handling via `INT_MIN / INT_MAX` to align left and right half elements. | $O(\log(\min(m, n)))$ time<br>$O(1)$ space | Done |
+| Search a 2D Matrix | • Treated the entire 2D sorted matrix as a single, contiguous 1D array ranging from index `0` to `(row * col) - 1` to perform standard binary search efficiently without taking extra space. <br> • Mapped the 1D middle index (`mid`) back to its corresponding 2D matrix positions dynamically in each iteration using the formulas `row = mid / col` and `col = mid % col` to fetch and compare elements. | O(log(N * M)) time <br> O(1) space | Done |
+
 ---
 
 ### 🧠 Critical Boundary Checks Covered
