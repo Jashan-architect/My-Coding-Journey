@@ -108,6 +108,7 @@ Currently stepping into linear data structures to upgrade the existing procedura
 | Sum Of Two Arrays | • Process both arrays from right to left using two pointers (`i` and `j`) to compute element-wise sum with `carry`. <br> • Use individual loops to exhaust remaining digits of the longer array and append any leftover carry at the end, then reverse the result. | O(N + M) time <br> O(max(N, M)) space | Done |
 | Maximum Occurring Character | &bull; **Frequency Mapping:** Create a 26-sized array initialized to 0. Iterate through the string and map each character using `s[i] - 'a'` to increment its respective count.<br>&bull; **Max Scan:** Loop from index 0 to 25 to track the maximum frequency. Scanning sequentially from 'a' to 'z' naturally handles lexicographically smaller ties. | $O(N)$ time<br>$O(1)$ space | Done |
 | **Remove All Occurrences of a Substring** | • **Sub-string Simulation:** Continuously locate the leftmost occurrence of the target substring using `s.find()` and remove it dynamically via `s.erase()`.<br>• **Termination Condition:** Run the lookup inside a `while` loop that terminates immediately when the substring is no longer found or the string becomes empty. | $O(N^2)$ time<br>$O(1)$ space | Done |
+| Print Like A Wave | • Iterated column-by-column as the outer loop to process the matrix in vertical tracks. <br> • Applied a modulo check (`col % 2 == 0`) to alternate between normal top-to-bottom and inverted bottom-to-top row traversals. | O(N * M) time <br> O(1) space | Done |
 
 ## ⛓️ Two Pointers Technique
 
